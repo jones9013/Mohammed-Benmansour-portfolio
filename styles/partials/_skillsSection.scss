@@ -1,0 +1,45 @@
+@use "./variables" as *;
+.skills {
+  height: auto;
+  padding: 20px;
+  background-image: url(../images/skills-image.jpeg);
+  background-position: fixed;
+  background-color: $semiTransparentBlack2;
+  background-position: center;
+  background-size: cover;
+  //   margin-bottom: 40px;
+}
+
+.skills h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.2;
+  //   letter-spacing: 1px;
+  color: $black;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: $blue;
+  margin-bottom: 60px;
+}
+
+.skills .skills-flex ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills .skills-flex ul li {
+  flex-basis: calc(90% / 4);
+  margin-bottom: 90px;
+}
+
+// styling incons
+.skills .skills-flex ul li a i {
+  color: $black;
+  font-size: 100px;
+}
+.skills .skills-flex ul li a i:hover {
+  transform: scale(2);
+}

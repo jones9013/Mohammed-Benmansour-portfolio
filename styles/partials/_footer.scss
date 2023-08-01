@@ -1,0 +1,123 @@
+@use "./variables" as *;
+footer {
+  background-color: $veryLightGray;
+}
+footer h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.2;
+  //   letter-spacing: 1px;
+  color: $black;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: $blue;
+  padding: 40px 20px;
+  margin: 0;
+}
+footer form .form-informations {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer form .form-informations .row {
+  flex-basis: calc(90% / 3);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+footer form .form-informations label {
+  margin-bottom: 10px;
+}
+footer form .form-informations .row-basis {
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer form .form-informations input {
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px solid $black;
+}
+footer form .form-informations textarea {
+  padding: 10px;
+  border-radius: 2px;
+  border: 0.5px solid $black;
+  margin-bottom: 20px;
+}
+footer .btn-message {
+  width: 250px;
+  height: 60px;
+  padding: 5px;
+  //   color: blue;
+  background-color: $skyBlue;
+  color: $white;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+}
+// adding hover for the button
+footer .btn-message:hover {
+  box-shadow: 10px 10px 10px $skyBlue;
+}
+
+// contact icons
+footer .contact-icons {
+  margin-top: 50px;
+}
+footer .contact-icons ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(40%);
+  padding: 10px;
+  margin: 20px;
+}
+// styling the color of the icons
+footer .contact-icons .fa-brands.fa-linkedin {
+  color: $brightBlue;
+  font-size: 33px;
+}
+footer .contact-icons .fa-brands.fa-twitter {
+  color: $skyBlue2;
+  font-size: 33px;
+}
+footer .contact-icons .fa-brands.fa-github {
+  color: $main-color;
+  font-size: 33px;
+}
+footer .contact-icons .fa-solid.fa-envelope {
+  color: $redOrange;
+  font-size: 33px;
+}
+// end of styling contact icons
+
+footer .copy-right {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px 0px 0px;
+  background-color: $black;
+  color: $white;
+}
+
+// ---------------------End of footer ---------------------------
+
+//-----------------------Scroll fade effects --------------------
+.scroll-fade {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.scroll-fade.active {
+  transform: translateY(0);
+  opacity: 1;
+}

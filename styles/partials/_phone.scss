@@ -1,0 +1,96 @@
+@use "./variables" as *;
+@media (max-width: 765px) {
+  header {
+    height: 50vh;
+  }
+  header .home-navbar {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+  }
+  header .home-navbar .mobile-menu {
+    display: block;
+  }
+
+  header .home-navbar ul {
+    height: 37vh;
+    width: 100%;
+    display: flex;
+    transform: none;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $semiTransparentBlack2;
+    transform: translateX(-100%);
+  }
+  #ul-menu.show {
+    transform: translateX(0);
+  }
+  #ul-menu.show li:hover {
+    color: $blue;
+    color: $white;
+  }
+  .home-navbar > ul:nth-child(1) > li:nth-child(1) {
+    margin-top: 85px;
+  }
+  header .home-navbar ul li a {
+    color: $white;
+  }
+
+  header .home-content h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+  }
+  header .home-content .message-effect {
+    font-size: 23px;
+    position: absolute;
+    top: 25%;
+  }
+  section.About .flex-about-section {
+    width: 90%;
+    padding: 10px 20px;
+  }
+  section.About .flex-about-section h3 {
+    font-size: 16px;
+  }
+  section.About .flex-about-section p {
+    font-size: 16px;
+  }
+  section.About .flex-about-section .btn-cv {
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .skills .skills-flex ul li a i {
+    font-size: 55px;
+  }
+
+  .projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-container .img-project {
+    width: 80%;
+  }
+  .projects .description p {
+    margin: 70px;
+    padding: 40px;
+  }
+
+  footer .btn-message {
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  footer .contact-icons ul li {
+    margin-right: 35px;
+  }
+  footer .copy-right {
+    font-size: 10px;
+  }
+}
