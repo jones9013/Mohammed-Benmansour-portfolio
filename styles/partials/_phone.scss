@@ -24,6 +24,11 @@
     background-color: $semiTransparentBlack2;
     transform: translateX(-100%);
   }
+
+  .fa-solid.fa-bars {
+    color: $white;
+  }
+
   #ul-menu.show {
     transform: translateX(0);
   }
