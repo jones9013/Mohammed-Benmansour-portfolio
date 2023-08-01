@@ -28,7 +28,7 @@ window.addEventListener(`scroll`, () => {
   });
 });
 
-//------------------ function for the typewriter in the hone page--------------------------
+//------------------ function for the typewriter in the home page--------------------------
 const typeWriter = () => {
   msgHomeTypeWriter.innerHTML =
     msgHomeTypeWriterArray[0].substring(0, msgPosition) + "<span>\u25ae</span>";
