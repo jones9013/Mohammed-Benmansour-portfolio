@@ -388,7 +388,7 @@ section.About .flex-about-section h2 {
   font-weight: 800;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: rgb(0, 0, 255);
+  text-decoration-color: blue;
 }
 
 section.About .flex-about-section .image-about-me img {
@@ -443,7 +443,7 @@ section.About .flex-about-section .btn-cv:hover {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: rgb(0, 0, 255);
+  text-decoration-color: blue;
   margin-bottom: 60px;
 }
 
@@ -563,7 +563,7 @@ footer h2 {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: rgb(0, 0, 255);
+  text-decoration-color: blue;
   padding: 40px 20px;
   margin: 0;
 }
@@ -718,17 +718,14 @@ footer .copy-right {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(9, 10, 11, 0.8);
     transform: translateX(-100%);
-  }
-  .fa-solid.fa-bars {
-    color: white;
   }
   #ul-menu.show {
     transform: translateX(0);
   }
   #ul-menu.show li:hover {
-    color: rgb(0, 0, 255);
+    color: blue;
     color: white;
   }
   .home-navbar > ul:nth-child(1) > li:nth-child(1) {
