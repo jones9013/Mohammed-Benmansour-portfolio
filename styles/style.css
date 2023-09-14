@@ -292,7 +292,7 @@ h2 {
 
 header {
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/pexels-life-of-pix-7974.jpg);
+  background-image: url(../../images/header.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -388,7 +388,7 @@ section.About .flex-about-section h2 {
   font-weight: 800;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: blue;
+  text-decoration-color: rgb(0, 0, 255);
 }
 
 section.About .flex-about-section .image-about-me img {
@@ -443,7 +443,7 @@ section.About .flex-about-section .btn-cv:hover {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: blue;
+  text-decoration-color: rgb(0, 0, 255);
   margin-bottom: 60px;
 }
 
@@ -563,7 +563,7 @@ footer h2 {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: blue;
+  text-decoration-color: rgb(0, 0, 255);
   padding: 40px 20px;
   margin: 0;
 }
@@ -669,7 +669,7 @@ footer .copy-right {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 1.5s ease;
+  transition: all 0.5s ease;
 }
 
 .scroll-fade.active {
@@ -677,26 +677,6 @@ footer .copy-right {
   opacity: 1;
 }
 
-@media (max-width: 1025px) {
-  header .home-content .message-effect {
-    font-size: 40px;
-  }
-  .skills .skills-flex ul li a i {
-    font-size: 70px;
-  }
-  .projects .projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .projects-container .img-project {
-    width: 80%;
-  }
-  .projects .description p {
-    margin: 70px;
-    padding: 40px;
-  }
-}
 @media (max-width: 765px) {
   header {
     height: 50vh;
@@ -710,7 +690,7 @@ footer .copy-right {
     display: block;
   }
   header .home-navbar ul {
-    height: 37vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     transform: none;
@@ -718,14 +698,17 @@ footer .copy-right {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(9, 10, 11, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     transform: translateX(-100%);
+  }
+  .fa-solid.fa-bars {
+    color: white;
   }
   #ul-menu.show {
     transform: translateX(0);
   }
   #ul-menu.show li:hover {
-    color: blue;
+    color: rgb(0, 0, 255);
     color: white;
   }
   .home-navbar > ul:nth-child(1) > li:nth-child(1) {
@@ -784,5 +767,25 @@ footer .copy-right {
   }
   footer .copy-right {
     font-size: 10px;
+  }
+}
+@media (max-width: 1025px) {
+  header .home-content .message-effect {
+    font-size: 40px;
+  }
+  .skills .skills-flex ul li a i {
+    font-size: 70px;
+  }
+  .projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-container .img-project {
+    width: 80%;
+  }
+  .projects .description p {
+    margin: 70px;
+    padding: 40px;
   }
 }
