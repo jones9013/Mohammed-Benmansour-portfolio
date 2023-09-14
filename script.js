@@ -2,6 +2,7 @@ const homeNavBar = document.querySelector(`.home-navbar`);
 const msgHomeTypeWriter = document.getElementById(`message-effect`);
 const msgHomeTypeWriterArray = [` Designer & Frontend Developer.`];
 const scrollFades = document.querySelectorAll(`.scroll-fade`);
+const screenwidth = window.innerWidth;
 
 let windowHeight = window.innerHeight;
 let scrollFadePoint = 150;
@@ -18,6 +19,7 @@ window.addEventListener(`scroll`, () => {
   }
 
   //------------------------- scroll fade effect------------------------------------
+
   scrollFades.forEach((scrollFade) => {
     const scrollFadeTop = scrollFade.getBoundingClientRect().top;
     if (scrollFadeTop < windowHeight - scrollFadePoint) {
@@ -54,12 +56,21 @@ mobileMenuIcon.addEventListener(`click`, () => {
 
 function toggleProjectDescriptions(project) {
   const projectDescription = project.querySelector(`.description`);
-  project.addEventListener(`mouseenter`, (event) => {
-    projectDescription.style.display = `block`;
-  });
-  project.addEventListener(`mouseleave`, (event) => {
-    projectDescription.style.display = `none`;
-  });
+
+  if (screenwidth > 1025) {
+    project.addEventListener(`mouseenter`, (event) => {
+      projectDescription.style.display = `block`;
+    });
+
+    project.addEventListener(`mouseleave`, (event) => {
+      projectDescription.style.display = `none`;
+    });
+  } else {
+    project.addEventListener("click", (event) => {
+      event.preventDefault();
+      toggleDescriptionAndButtons();
+    });
+  }
 }
 
 const projects = document.querySelectorAll(`.img-project`);
