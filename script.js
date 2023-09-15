@@ -1,5 +1,6 @@
 const homeNavBar = document.querySelector(`.home-navbar`);
 const msgHomeTypeWriter = document.getElementById(`message-effect`);
+
 const msgHomeTypeWriterArray = [` Designer & Frontend Developer.`];
 const scrollFades = document.querySelectorAll(`.scroll-fade`);
 const screenwidth = window.innerWidth;
@@ -47,9 +48,17 @@ const mobileMenuIcon = document.getElementById(`mobile-menu-icon`);
 const ulMenu = document.getElementById(`ul-menu`);
 const homeContent = document.getElementById(`home-content`);
 
+let contentVisible = true;
+
 mobileMenuIcon.addEventListener(`click`, () => {
   ulMenu.classList.toggle("show");
-  homeContent.style.display = `none`;
+  if (contentVisible) {
+    homeContent.style.display = "none ";
+    contentVisible = false;
+  } else {
+    homeContent.style.display = "flex";
+    contentVisible = true;
+  }
 });
 
 // ------------------------toggle projects's descriptions ---------------
