@@ -86,3 +86,33 @@ const projects = document.querySelectorAll(`.img-project`);
 projects.forEach((project) => {
   toggleProjectDescriptions(project);
 });
+
+// making buttons project working
+
+// const viewCodeBtn = document.querySelector(`.btn-view-code`);
+// const viewLiveBtn = document.querySelector(`.btn-view-live`);
+
+const projectsButtons = document.querySelectorAll(
+  `.btn-view-code, .btn-view-live`
+);
+
+function openInNewTab(link) {
+  if (link) {
+    window.open(link, `_blank`);
+  }
+}
+projectsButtons.forEach((projectButton) => {
+  projectButton.addEventListener(`click`, () => {
+    const link = projectButton.dataset.link;
+    openInNewTab(link);
+  });
+});
+// viewCodeBtn.addEventListener(`click`, () => {
+//   const link = viewCodeBtn.dataset.link;
+//   openInNewTab(link);
+// });
+
+// viewLiveBtn.addEventListener(`click`, () => {
+//   const link = viewLiveBtn.dataset.link;
+//   openInNewTab(link);
+// });

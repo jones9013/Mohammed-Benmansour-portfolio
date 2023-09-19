@@ -81,9 +81,16 @@
   .projects-container .img-project {
     width: 80%;
   }
+  .projects .btn-projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
   .projects .description p {
-    margin: 70px;
-    padding: 40px;
+    // margin: 70px;
+    // padding: 40px;
+    display: none;
   }
 
   footer form .form-informations {

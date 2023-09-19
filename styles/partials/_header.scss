@@ -1,7 +1,7 @@
 @use "./variables" as *;
 header {
   background-color: $semiTransparentBlack; // i have to check the background color is over-riding by th img
-  background-image: url(../../images/header.png);
+  background-image: url(../images/header.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
