@@ -102,7 +102,8 @@ function openInNewTab(link) {
   }
 }
 projectsButtons.forEach((projectButton) => {
-  projectButton.addEventListener(`click`, () => {
+  projectButton.addEventListener(`click`, (event) => {
+    event.preventDefault();
     const link = projectButton.dataset.link;
     openInNewTab(link);
   });
