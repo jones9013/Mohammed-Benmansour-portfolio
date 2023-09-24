@@ -76,8 +76,8 @@ function toggleProjectDescriptions(project) {
     });
   } else {
     project.addEventListener("click", (event) => {
-      event.preventDefault();
-      toggleDescriptionAndButtons();
+      // event.preventDefault();
+      toggleProjectDescriptions();
     });
   }
 }
