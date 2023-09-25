@@ -73,6 +73,10 @@
     font-size: 55px;
   }
 
+  .skills .skills-flex ul li a i:hover {
+    transform: none;
+  }
+
   .projects .projects-container {
     display: flex;
     flex-direction: column;

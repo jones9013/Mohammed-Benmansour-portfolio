@@ -5,6 +5,10 @@
   .skills .skills-flex ul li a i {
     font-size: 70px;
   }
+  .skills .skills-flex ul li a i:hover {
+    transform: none;
+  }
+
   .projects .projects-container {
     display: flex;
     flex-direction: column;

@@ -465,7 +465,7 @@ section.About .flex-about-section .btn-cv:hover {
 }
 
 .skills .skills-flex ul li a i:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 .projects {
@@ -686,6 +686,9 @@ footer .copy-right {
   .skills .skills-flex ul li a i {
     font-size: 70px;
   }
+  .skills .skills-flex ul li a i:hover {
+    transform: none;
+  }
   .projects .projects-container {
     display: flex;
     flex-direction: column;
@@ -766,6 +769,9 @@ footer .copy-right {
   }
   .skills .skills-flex ul li a i {
     font-size: 55px;
+  }
+  .skills .skills-flex ul li a i:hover {
+    transform: none;
   }
   .projects .projects-container {
     display: flex;
