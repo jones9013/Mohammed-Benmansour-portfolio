@@ -528,8 +528,10 @@ section.About .flex-about-section .btn-cv:hover {
 
 .projects .description p {
   margin: 30px;
-  padding: 20px;
+  padding: 10px;
   color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 
 .projects .btn-projects {
