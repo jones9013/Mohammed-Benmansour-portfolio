@@ -76,10 +76,17 @@ function toggleProjectDescriptions(project) {
     });
   } else {
     project.addEventListener("click", (event) => {
-      // event.preventDefault();
       toggleProjectDescriptions();
+      projectDescription.style.display =
+        projectDescription.style.display === "block" ? "none" : "block";
     });
   }
+  // adding touch screen
+  project.addEventListener("touchstart", (event) => {
+    event.preventDefault();
+    projectDescription.style.display =
+      projectDescription.style.display === "block" ? "none" : "block";
+  });
 }
 
 const projects = document.querySelectorAll(`.img-project`);
