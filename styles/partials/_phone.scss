@@ -87,9 +87,15 @@
   }
   .projects .btn-projects {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+
     align-items: center;
     height: 100%;
+  }
+  .projects .btn-projects .btn-view-code,
+  .projects .btn-projects .btn-view-live {
+    width: 100px;
+    height: 35px;
   }
   .projects .description p {
     // margin: 70px;
