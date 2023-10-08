@@ -11,24 +11,32 @@ let msgPosition = 0;
 const msgSpeed = 100;
 
 // making position fixed to my nav bar when I scroll down ---
-window.addEventListener(`scroll`, () => {
+// Handle navbar's fixed behavior
+window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
+  const headerHeight = window.innerHeight * 0.1;
   if (window.innerWidth > 765) {
-    homeNavBar.classList.add(`fixed`);
+    if (scrollY >= headerHeight) {
+      homeNavBar.classList.add("fixed");
+    } else if (scrollY < headerHeight) {
+      homeNavBar.classList.remove("fixed");
+    }
   } else {
-    homeNavBar.classList.remove(`fixed`);
+    homeNavBar.classList.remove("fixed");
   }
+});
 
-  //------------------------- scroll fade effect------------------------------------
+// Scroll fade effect
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
 
   scrollFades.forEach((scrollFade) => {
     const scrollFadeTop = scrollFade.getBoundingClientRect().top;
     if (scrollFadeTop < windowHeight - scrollFadePoint) {
-      scrollFade.classList.add(`active`);
+      scrollFade.classList.add("active");
     } else {
-      scrollFade.classList.remove(`active`);
+      scrollFade.classList.remove("active");
     }
-    lastScrollPosition = scrollY;
   });
 });
 
