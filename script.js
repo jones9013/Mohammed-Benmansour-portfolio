@@ -28,6 +28,7 @@ window.addEventListener(`scroll`, () => {
     } else {
       scrollFade.classList.remove(`active`);
     }
+    lastScrollPosition = scrollY;
   });
 });
 
@@ -113,14 +114,11 @@ projectsButtons.forEach((projectButton) => {
     event.preventDefault();
     const link = projectButton.dataset.link;
     openInNewTab(link);
+    console.log("Clicked with mouse");
+  });
+  projectButton.addEventListener(`touchstart`, (event) => {
+    event.preventDefault();
+    const link = projectButton.dataset.link;
+    openInNewTab(link);
   });
 });
-// viewCodeBtn.addEventListener(`click`, () => {
-//   const link = viewCodeBtn.dataset.link;
-//   openInNewTab(link);
-// });
-
-// viewLiveBtn.addEventListener(`click`, () => {
-//   const link = viewLiveBtn.dataset.link;
-//   openInNewTab(link);
-// });
